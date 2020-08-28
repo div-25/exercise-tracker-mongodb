@@ -1,3 +1,38 @@
+## Exercise Tracker App - (MongoDB - Express - React - Node.js)
+
+This is a practice project I did to learn the MERN stack.
+
+How to run out-of-the-box?
+
+1. Create your account with [MongoDB Atlas](https://www.mongodb.com/cloud/atlas). Deploy a cluster (free tier available).
+
+2. On the dashboard, go to Connect -> Connect your application and copy the connection string (it looks like mongodb+srv://\<user-name\>:\<password\>@cluster0.j1fd7.gcp.mongodb.net/\<dbname\>?retryWrites=true&w=majority)
+
+3. Create a .env file in the /backend folder and write to it:
+
+ATLAS_URI=\<paste the connection string\>
+
+4. In the .env file created above, replace \<user-name\> and \<password\> with the appropriate values (found at Database Access under Security dashboard).
+
+5. Whitelist your current IP address and the IP 0.0.0.0/0 from the mongodb console.
+
+6. Open terminal in project's directory. 
+  
+  $ npm install
+  
+  $ npm start
+  
+  It should open the app in browser with localhost:3000. The server is not connected to MongoDB yet.
+
+7. Open another terminal in the /backend directory of this project.
+   
+   $ npm install
+   
+   $ nodemon server
+   
+   The app is fully functional now.
+
+---------------------------------------------------------------------------------------------------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
